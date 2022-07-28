@@ -1,3 +1,4 @@
+
 body {
     background-color: #89CFF0;
 }
@@ -15,7 +16,6 @@ body {
     background: url("./ok1.jpg");
     margin-top: 17.5vh;
 }
-
 .c2 {
     background-color: #86FDE0;
     padding: 3em;
@@ -112,4 +112,31 @@ p {
 .active:after {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
+}
+*{
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: montserrat;
+}
+.navbar-brand{
+    font-family: 'Indie Flower';
+    padding-right:15em;
+    color:white;
+}
+.collapse navbar-collapse {
+    align-items:center;
+    color:white;
+}
+.nav-item{
+    padding-left:3em;
+    padding-right:3em;
+}
+.nav-link{
+    color:white;
 }
