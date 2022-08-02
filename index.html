@@ -9,13 +9,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        setInterval(myTimer, 1000);
+
+        function myTimer() {
+            $(document).ready(function () {
+                $("#myModal").modal('show');
+            });
+        }
+    </script>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-black fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">App Development</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -27,12 +38,38 @@
                         <a class="nav-link bg-secondary bg-gradient p-2" href="#faq">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link bg-secondary bg-gradient p-2" href="#imgs">Images</a>
+                        <a class="nav-link bg-secondary bg-gradient p-2" href="#img">Images</a>
+                    </li>
+                    <li class="nav-item">
+                        <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">
+                            Book a Free Demo
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">A Free Demo Session By Certified Tutors.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Book your Free Demo session here.<span class="badge text-dark">By <a
+                                href="https://athu-kawale2002.github.io/newPortfolio/">Devansh Shirbhate </a></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Book
+                        Demo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="c1">
             <h1><b>APPLICATON DEVELOPMENT</b></h1>
@@ -49,8 +86,7 @@
             <hr>
             <h3>The App Development Lifecycle</h3>
             <p style="text-align:center ;">The app development lifecycle features several steps involved in a typical
-                app development project. These
-                steps include:
+                app development project. Thesesteps include:
             </p>
             <div class="row">
                 <div class="col-6 col-md-4"><img src="appdev2.jpg"></div>
@@ -143,75 +179,75 @@
                 code only to enhance its capabilities even further.</p>
 
         </div>
-        <section class="imgs">
-        <div class="c3">
-            <h4>Few are the examples of No-Code given below:-</h4>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                        aria-label="Slide 6"></button>
+        <section id="img">
+            <div class="c3">
+                <h4>Few are the examples of No-Code given below:-</h4>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image5.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image6.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="image1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="image2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="image3.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="image4.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="image5.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="image6.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </div>
         </section>
-        <section class="faq">
-        <div class="c4">
-            <h3>FAQ’s</h3>
-            <button class="accordion">Will this be live or recorded session?</button>
-            <div class="panel">
-                <p>This is going to conduct Live session </p>
-            </div>
+        <section id="faq">
+            <div class="c4">
+                <h3>FAQ’s</h3>
+                <button class="accordion">Will this be live or recorded session?</button>
+                <div class="panel">
+                    <p>This is going to conduct Live session </p>
+                </div>
 
-            <button class="accordion"> Would there be any certificate on completion?</button>
-            <div class="panel">
-                <p>Yes, there will be certificate on completion of course</p>
-            </div>
+                <button class="accordion"> Would there be any certificate on completion?</button>
+                <div class="panel">
+                    <p>Yes, there will be certificate on completion of course</p>
+                </div>
 
-            <button class="accordion">What will be the time?</button>
-            <div class="panel">
-                <p>You can get all the details related to the date and timing  by your instructor.</p>
+                <button class="accordion">What will be the time?</button>
+                <div class="panel">
+                    <p>You can get all the details related to the date and timing by your instructor.</p>
+                </div>
             </div>
-        </div>
         </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
